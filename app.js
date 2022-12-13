@@ -15,6 +15,6 @@ app.get("/", (req, res) => {
    res.send("Route is working! YaY!");
  });
  app.use('/api/posts', postRoute)
- app.use('/api/auth', postRoute)
+ app.use('/api/auth', userRoute)
  
 export default app
