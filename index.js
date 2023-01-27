@@ -4,7 +4,7 @@ import dotenv from 'dotenv'
 
 dotenv.config()
 
-const PORT=process.env.PORT|| 5000
+const PORT=process.env.PORT|| 8000
 
 
 const CONNECTION_URL=`mongodb+srv://${process.env.USER}:${process.env.PASS}@cluster0.n3pgyaj.mongodb.net/?retryWrites=true&w=majority`
