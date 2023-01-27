@@ -10,7 +10,9 @@ const app=express()
 const corsOptions ={
   origin:'*', 
   credentials:true,            //access-control-allow-credentials:true
-  optionSuccessStatus:200
+  optionSuccessStatus:200,
+  methods: 'GET,POST,PUT,DELETE',
+  allowedHeaders: 'Content-Type,Authorization'
 }
 app.use(cors(corsOptions));
 app.use(bodyParser.json({limit: '30mb', extended: true }))
