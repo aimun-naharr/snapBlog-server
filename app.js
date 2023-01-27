@@ -8,10 +8,10 @@ const app=express()
 
 // middlewares
 const corsOptions ={
-  origin:'http://localhost:5173/', 
+  origin:'*', 
   credentials:true,            //access-control-allow-credentials:true
   optionSuccessStatus:200,
-  methods: 'GET,POST,PUT,DELETE',
+  methods: ['GET,PUT,DELETE'],
   allowedHeaders: 'Content-Type,Authorization'
 }
 app.use(cors(corsOptions));
