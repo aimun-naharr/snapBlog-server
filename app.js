@@ -8,7 +8,7 @@ const app=express()
 
 // middlewares
 const corsOptions ={
-  origin:'*', 
+  origin:'http://localhost:5173/', 
   credentials:true,            //access-control-allow-credentials:true
   optionSuccessStatus:200,
   methods: 'GET,POST,PUT,DELETE',
